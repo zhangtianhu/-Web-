@@ -1,0 +1,29 @@
+<div class="center">
+  <h1 style="display:inline;margin-left:400px;">{{title}}</h1>      
+  <input type="text" [(ngModel)] = "txt" (keydown)="fun($event)" id="one" style="width:200px;margin-left:100px;" placeholder="添加ToDo" required="required">
+  
+  
+  <ul>
+    <h4>正在进行<span>{{arr.length-counter}}</span></h4>
+    <ng-container>
+        <li *ngFor="let item of arr;let i = index;">
+            <div *ngIf="!item.done">
+              <input type="checkbox" (click)="add1(i)"> {{item.title}}
+              <input type="button" value="删除"  (click)="del(i)">
+            </div>
+          </li>
+    </ng-container>
+  </ul>
+  <ul>
+    <h4>已经完成<span>{{counter}}</span></h4>
+    <ng-container>
+        <li *ngFor="let item of arr;let i = index;">
+            <div *ngIf="item.done">
+              <input type="checkbox" (click)="add1(i)" checked> {{item.title}}
+              <input type="button" value="删除"  (click)="del(i)">
+            </div>
+            
+          </li>
+    </ng-container>
+  </ul>
+  </div>
