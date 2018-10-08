@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animate</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="box"></div>
+    <script src="animate.js"></script>
+    <script>
+        var box = document.getElementById('box');
+        box.onclick = function(){
+            animate(box,{left:500,top:300,opacity: 0.2*100 },function(){
+            });
+            //匀速运动
+            // var timer = setInterval(()=>{
+            //     var now = parseInt(getStyle(box,'left'));
+            //     if(now === 200){
+            //         clearInterval(timer);
+            //     }
+            //     else{
+            //         box.style.left = now + 1 + 'px';
+            //     }
+            // },30);
+            
+            //变速运动
+            // var timer = setInterval(()=>{
+            //     var now = parseInt(getStyle(box,'left'));
+            //     var speed = (200 - now)/8;
+            //     speed = speed > 0?Math.ceil(speed):Math.floor(speed);
+            //     //小数不能停止问题，
+            //     if(now === 200){
+            //          clearInterval(timer);
+            //     }
+            //      else{
+            //         box.style.left = now + speed + 'px';
+            //     }
+            // },30)
+        }
+
+        // function getStyle(obj,attr){
+        //     if(obj.currentStyle){
+        //         return obj.currentStyle[attr];
+        //     }
+        //     else{
+        //         return getComputedStyle(obj,null)[attr];
+        //     }
+        // }
+    </script>
+
+</body>
+</html>
