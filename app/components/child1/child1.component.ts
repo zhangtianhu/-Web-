@@ -1,4 +1,4 @@
-import { Component, OnInit,Input ,EventEmitter,Output } from '@angular/core';
+import { Component, OnInit,Input,Output,EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-child1',
@@ -7,25 +7,20 @@ import { Component, OnInit,Input ,EventEmitter,Output } from '@angular/core';
 })
 export class Child1Component implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  @Input() count;
+  @Input() arr;
+  @Output() delIndex = new EventEmitter();
+  @Output() changeIndex = new EventEmitter();
+  del(i){
+    this.delIndex.emit(i);
   }
-  txt:string;
-  @Output() eventchild1=new EventEmitter();
-  
-  fun(e){
-    if(e.keyCode==13){
-      this.eventchild1.emit(new Msg(this.txt,false));
-      this.txt="";
-    }
-  };
-}
-export class Msg{
-  constructor(public title:string,public done:boolean){
+  change(i) {
+    this.arr[i].done = !this.arr[i].done;
+    this.changeIndex.emit(i);
+  }
+
+  ngOnInit(){
 
   }
 
 }
-
-

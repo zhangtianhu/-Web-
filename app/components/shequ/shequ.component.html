@@ -1,0 +1,19 @@
+<div class="container">
+    <ul>
+      <li *ngFor="let shequ of shequ">
+        <!-- <a [routerLink]= "['/tongbu',course.id]"> -->
+          <div id="zuo1">
+        <img src="{{shequ.img}}" alt="" id="zuo">
+          </div>
+          <div id="you1">
+        <img src="{{shequ.images}}" alt="" id="you">
+        <h6>{{shequ.title}}</h6>
+        <span>{{shequ.jieshao}}</span>
+            </div>
+        <span id="xia">{{shequ.author}}</span>
+        <span id="xia">{{shequ.date}}</span>
+        <span id="youx">阅读：{{shequ.look}}</span>
+        <span id="youx">评论：{{shequ.pinglun}}</span>
+      </li>
+    </ul>
+        </div>

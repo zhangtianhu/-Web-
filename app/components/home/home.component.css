@@ -1,0 +1,24 @@
+#home{
+    margin: 0 auto;
+    width: 1200px;
+    margin-top: 50px;
+}
+i{
+    color: gray;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.img{
+    float: left;
+    width: 200px;
+    height: 250px;
+    /* border: 1px solid gray */
+}
+
+.left{
+    position:relative;
+    top:300px;   
+    right: 200px;
+}

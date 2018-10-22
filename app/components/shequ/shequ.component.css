@@ -1,0 +1,41 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#zuo1{
+    float: left
+}
+#you1{
+    width:800px;
+    margin-left: 0px;
+}
+#zuo{
+    width: 30px;
+    height: 30px;
+}
+#you{
+    width: 120px;
+    height: 60px;
+}
+h6{
+    position: relative;
+    left: 170px;
+    bottom: 60px;
+}
+span{
+    position: relative;
+    left: 170px;
+    bottom:60px;
+}
+#xia{
+    position: relative;
+    left: 30px;
+    font-size: 50%;
+    color:gray
+    }
+    #youx{
+        position: relative;
+        left: 600px;
+        color: gray
+    }

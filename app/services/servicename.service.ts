@@ -1,6 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Session } from 'protractor';
-
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +12,4 @@ export class ServicenameService {
   get(key){
     return localStorage.getItem(key);
   }
-  
-
 }

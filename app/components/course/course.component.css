@@ -1,0 +1,25 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.container li{
+    width:250px;
+    height: 260px;
+    float: left;
+    border: 1px solid gray;
+}
+img{
+    width: 230px;
+    height: 120px
+}
+#jieshao{
+    width: 250px;
+    height: 80px;
+    overflow: hidden;
+    margin: 0;
+}
+
+span{
+    color: gray;
+}

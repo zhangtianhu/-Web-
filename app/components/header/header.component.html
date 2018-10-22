@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+
+<nav>
+<ul class="nav">
+    <img src="image/logo.png" alt="0" id="img">
+  <li><a [routerLink]="['/home']">首页</a></li>
+  <li><a [routerLink]="['/tongbu']">同步课</a></li>
+  <li><a [routerLink]="['/course']">课程</a></li>
+  <li><a [routerLink]="['/shequ']" >社区</a></li>
+  <li class="input">
+    <div class="search-banner">
+      <form class="form-group" role="search">
+        <input id="q"  value autocomplete="off" placeholder="搜索课程/问答">
+        <span class="input-btn">
+          <button type="button" class="btn">
+            <img src="image/搜索.png" id="search">
+          </button>
+        </span>
+      </form>
+    </div>
+  </li>
+  <li>
+    <span><i class="icon icon-bell"></i></span>
+  </li>
+</ul>
+
+</nav>
