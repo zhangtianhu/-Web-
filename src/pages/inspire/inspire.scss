@@ -1,0 +1,33 @@
+.tou{
+    margin: 0 auto;
+    width: 80px;
+    height: 130px;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    p{
+        font-weight: bolder;
+        font-size: 15px;
+    }
+}
+.bgmy{
+    background-image: url("../../assets/imgs/mybg.png");
+    height: 150px;
+    background-size: cover;
+}
+.my{
+    width:80px;
+    height: 60%;
+    border-radius: 50% 50%;
+}
+.a2{
+    float: right;
+    color: darkgrey;
+}
+.create{
+    font-size: 250%;
+}
+.row{
+    margin-bottom: 5px;
+}
+

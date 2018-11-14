@@ -1,0 +1,45 @@
+page-jiaju {
+    ion-content{
+        background-color:#FFDB2C !important;
+        
+    }
+  button{
+        border-radius: 50% 50% !important;
+        width: 80px ;
+        height: 80px ;
+        ion-icon{
+            font-size: 300%;
+        }
+    }
+    .btn11{
+        background-color:darkgrey;
+    }
+    .btn1{
+        position: absolute;
+        top:150px;
+        left: 80px;
+    }
+    .btn2{
+        position: absolute;
+        top:150px;
+        left: 190px;
+    }
+    .btn22{
+        background-color: azure;
+    }
+    .btn3{
+        position: absolute;
+        top:350px;
+        left: 80px;
+    }
+    .btn4{
+        position: absolute;
+        top:350px;
+        left: 190px;
+    }
+    .btndiv{
+        display: inline-block;
+        vertical-align: center;
+        text-align: center
+    }
+}
